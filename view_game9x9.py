@@ -22,7 +22,6 @@ def Print():
         for x in st:
             print(x, end=' ')
         print()
-    print()
 
 
 Print()
@@ -31,9 +30,11 @@ for move in game_log:
     if '[]' in move:
         break
     x = convert[move[2]]
-    y = convert[move[3]]    
+    y = convert[move[3]]
+    print('(',x+1,'; ',y+1,')',sep='')
     if move[0] == 'B':
         game[x][y] = 'X'
     else:
         game[x][y] = '0'
     Print()
+    input()
