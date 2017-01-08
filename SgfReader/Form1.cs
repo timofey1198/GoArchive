@@ -15,6 +15,7 @@ namespace SgfReader
         public Form1()
         {
             InitializeComponent();
+            new Chart { Parent = this, Dock = DockStyle.Fill };
         }
     }
 }
