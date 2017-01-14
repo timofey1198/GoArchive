@@ -1,9 +1,0 @@
-E:\Projects\GoArchive\SgfReader\bin\Debug\SgfReader.exe.config
-E:\Projects\GoArchive\SgfReader\bin\Debug\SgfReader.exe
-E:\Projects\GoArchive\SgfReader\bin\Debug\SgfReader.pdb
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.csprojResolveAssemblyReference.cache
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.Form1.resources
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.Properties.Resources.resources
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.csproj.GenerateResource.Cache
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.exe
-E:\Projects\GoArchive\SgfReader\obj\Debug\SgfReader.pdb
