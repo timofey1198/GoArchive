@@ -15,7 +15,11 @@ namespace SgfReader
         public Form1()
         {
             InitializeComponent();
-            new Chart { Parent = this, Dock = DockStyle.Fill };
+        }
+
+        private void Punct_Click(object sender, EventArgs e)
+        {
+            this.Text = "123";
         }
     }
 }

@@ -1,4 +1,9 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Drawing;
 
 namespace SgfReader
@@ -31,21 +36,39 @@ namespace SgfReader
         /// </summary>
         private void InitializeComponent()
         {
+            int size = Settings1.Default.BoardSize;
+            this.points = new Punct[size, size];
             this.SuspendLayout();
+            // 
+            // points
+            //
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    points[i, j] = new Punct(i, j);
+                    points[i, j].Click += new EventHandler(points[i, j].Punct_Click);
+                }
+            }
+
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    this.Controls.Add(points[i, j]);
+                }
+            }
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Pen pen = new Pen(Color.FromArgb(255, 0, 0, 0));
+        private Punct[,] points;
     }
 }
 
