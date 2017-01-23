@@ -25,7 +25,7 @@ namespace SgfReader {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("19")]
+        [global::System.Configuration.DefaultSettingValueAttribute("9")]
         public int BoardSize {
             get {
                 return ((int)(this["BoardSize"]));
@@ -49,7 +49,7 @@ namespace SgfReader {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
         public int BoardStartY {
             get {
                 return ((int)(this["BoardStartY"]));

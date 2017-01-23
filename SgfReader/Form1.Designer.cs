@@ -39,7 +39,18 @@ namespace SgfReader
         {
             int size = Settings1.Default.BoardSize;
             this.points = new Punct[size, size];
+            this.button_Next = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button_Next
+            // 
+            this.button_Next.Location = new System.Drawing.Point(44, 13);
+            this.button_Next.Name = "button_Next";
+            this.button_Next.Size = new System.Drawing.Size(75, 23);
+            this.button_Next.TabIndex = 0;
+            this.button_Next.Text = "Next";
+            this.button_Next.UseVisualStyleBackColor = true;
+            this.button_Next.Click += new System.EventHandler(this.button_Next_Click);
             // 
             // points
             //
@@ -55,7 +66,7 @@ namespace SgfReader
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(size*40, size*35);
+            this.ClientSize = new System.Drawing.Size(size*40, size*35 + 30);
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
@@ -63,12 +74,15 @@ namespace SgfReader
                     this.Controls.Add(points[i, j]);
                 }
             }
+            this.Controls.Add(button_Next);
             this.Name = "Form1";
             this.ResumeLayout(false);
         }
 
         #endregion
         private Punct[,] points;
+        private Button button_Next;
+        private Game g = new Game("E://1.sgf");
     }
 }
 

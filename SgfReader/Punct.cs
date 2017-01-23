@@ -55,6 +55,7 @@ namespace SgfReader
             this.Size = new Size(31, 31);
             this.TabIndex = i + j*size;
             this.UseVisualStyleBackColor = true;
+            this.Enabled = false;
         }
 
         public int X { get; }
